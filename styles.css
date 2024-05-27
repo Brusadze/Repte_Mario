@@ -8,7 +8,7 @@ header{
     top: 0px;
     width: 100%;
     height: 210px;
-    background: url(nubes_mario.png) repeat-x;
+    background: url(imgs/nubes_mario.png) repeat-x;
     z-index: -1;
     animation: slideNubes 50s linear infinite;
 }
@@ -17,7 +17,7 @@ footer{
     bottom: 0px;
     width: 100%;
     height: 40px;
-    background: url(suelo.jpg) repeat-x;
+    background: url(imgs/suelo.jpg) repeat-x;
     z-index: 1;
     animation: slideSuelo 100s linear infinite;
 
@@ -48,7 +48,7 @@ main img{
 }
 
 input[type="checkbox"] {
-    content: url('mario_yoshi.png');
+    content: url('imgs/mario_yoshi.png');
     appearance: none;
     width: 150px;
     position: fixed;
@@ -57,7 +57,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    content: url('mario_yoshi_80px.png');
+    content: url('imgs/mario_yoshi_80px.png');
 }
 
 
