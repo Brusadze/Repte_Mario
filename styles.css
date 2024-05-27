@@ -10,8 +10,17 @@ header{
     height: 210px;
     background: url(imgs/nubes_mario.png) repeat-x;
     z-index: -1;
-    animation: slideNubes 50s linear infinite;
+    animation: slideNubes 60s linear infinite;
 }
+#kirby{
+    margin-top: 50px;
+    width: 200px;
+    height: 140px;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1013a74a-d6aa-48ea-967a-164457c826b9/devnwkg-2aa93e18-8246-4cd0-b6f7-4a1e94da9a53.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEwMTNhNzRhLWQ2YWEtNDhlYS05NjdhLTE2NDQ1N2M4MjZiOVwvZGV2bndrZy0yYWE5M2UxOC04MjQ2LTRjZDAtYjZmNy00YTFlOTRkYTlhNTMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lQNNdmYuNQ2-kJVej0ywnK2Lv7c9zu-0B2XnT_wIlA8);
+    z-index: -5;
+    background-size: cover;
+    animation: kirbyAnim 3s linear infinite;
+  }
 footer{
     position: fixed;
     bottom: 0px;
@@ -60,16 +69,26 @@ footer{
 
 #star{
   position: absolute;
-  left: 150px;
+  top: 50px;
+  left: 100px;
   width: 100px;
   height: 100px;
-  background-image: url(https://i.gifer.com/origin/23/238a465012f48c55b9c96c351be7eadd.gif);
-  z-index: 20;
+  background-image: url(https://www.gifss.com/armas/bombas/images/bom.gif);
+  z-index: -5;
   background-size: cover;
   background-repeat: no-repeat;
   animation: starAnim 3s linear infinite;
 
 }
+@keyframes kirbyAnim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(1300px);
+  }
+}
+
 
 @keyframes starAnim {
   0% {
